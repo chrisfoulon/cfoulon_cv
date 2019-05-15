@@ -1,0 +1,173 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.86, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage[french, english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amssymb}
+\usepackage{eurosym}
+
+
+% copied and adapted from moderncvstyleclassic.sty
+% customizations are made before the elements #2 - #7
+\newcommand*{\cvconference}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\scshape#3}%
+    \ifthenelse{\equal{#4}{}}{}{, {\itshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{, {\color{black}#5}}%
+    \ifthenelse{\equal{#6}{}}{}{}%
+    .\strut%
+    \ifx&#7&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}\small% next line: customization
+      \selectfont% The percent signs are necessary!
+      #7\end{minipage}}\fi}}
+
+
+\firstname{Chris}
+\familyname{\textsc{Foulon}}
+\title{PhD}
+\address{600 E 53rd Street}{78751 Austin, Texas, USA}
+\mobile{+1 512 293 6694}
+\email{hd.chrisfoulon@gmail.com}
+\extrainfo{Nationality: French}
+%\homepage{}
+\setlength{\hintscolumnwidth}{2.9cm}
+
+\begin{document}
+\makecvtitle
+\vspace{-1cm}
+
+
+\section{Career Summary}
+\cventry{2018~–~now}{Postdoc}{Development of novel computational analysis and experimental techniques for determining how brain function and structure are impacted by mental illness and development}{Department of Diagnostic Medicine, The University of Texas at Austin, Dell Medical School}{
+ Supervisor: Cameron Craddock, Computational Neuroimaging Laboratory}{}
+ \cventry{2015~–~2018}{PhD in Neuroscience}{Implementing advanced
+ Neo-Associationist analyses of the brain}{Inserm U1127, ED3C}{
+ Supervisor: Michel Thiebaut de Schotten, Brain Connectivity Behaviour Lab}{}
+ %{Funded by ANR/FRM}
+\cventry{2013~–~2015}{Master's degree in Theoretical Computer Science and
+ Implementation}{}{University of Rouen}{}{}
+\cventry{2009~–~2013}{Bachelor of Science in Computer Science}{}{}{
+University of Rouen}{}
+
+\renewcommand\refname{Publications}
+\bibliographystyle{unsrt}
+\bibliography{bibcv}
+\nocite{*}
+
+\section{Grants}
+\cventry{2017}{International Neuroinformatics Coordinating Facility (INCF)
+project grant}{\newline{Project: Connectivity-­based brain parcellation toolkit}}
+{2900\euro{}}{}{}
+\cventry{2016}{Naturalia \& Biologia travel grant}{}{1170\euro{}}{}{}
+%\section{Publications}
+%\cventry{}{Foulon C and Cerliani L and Kinkingnehun S and Levy R and Rosso
+%	C and Urbanski M and Volle E and Thiebaut de Schotten M}{Advanced Lesion Symptom Mapping
+%	Analyses And Implementation As BCBtoolkit}{2017}{BioRxiv}{}
+
+\section{Visiting Position}
+\cvconference{2017 - 2 months}
+{Visiting research at Max Planck Institute for Human Cognitive and Brain
+Sciences of Leipzig}
+{Development of whole brain parcellation methods based on structural and
+functional connectivity with Daniel Margulies, head of the Max Planck Research
+Group Neuroanatomy \& Connectivity}
+{}{}{}
+
+\section{Workshop Organisations}
+
+\cvconference{2018}{BrainHack Paris: Global Edition}{about 30 participants}
+{During which I animated a workshop: Python neuroimaging beginners tutorial}
+{Paris, France}{\href{http://www.bcblab.com/BCB/Events/Entries/2018/5/2_BrainHack_in_Paris__Global_Edition.html}{www.bcblab.com}}
+\cvconference{2018}{BrainHack Paris: Anatomy}{about 20 participants}
+{During which I animated a workshop: Python Workshop for beginners}
+{Paris, France}{\href{http://bcblab.com/BCB/Events/Entries/2018/2/19_BrainHack_in_Paris__Anatomy.html}{www.bcblab.com}}
+\cvconference{2017}{BrainHack London: Clinical neuroanatomy}{about 15 participants}
+{During which I animated a workshop: BCBtoolkit: Open software for lesion data analyses}
+{London, UK}
+{\href{https://www.brainhacklondon.eu/}{www.brainhacklondon.eu}}
+\cvconference{2017}{BrainHack Paris: Brain lesions}{about 40 participants}
+{}{Paris, France}{\href{http://neuroanatomy.github.io/events/brainhack-lesions/}{neuroanatomy.github.io/events/brainhack-lesions}}
+\cvconference{2017}{BrainHack Paris: Global Edition}{about 40 participants}{}
+{Paris, France}{\href{http://www.brainhack.org/global2017/}{www.brainhack.org/global2017}}
+\cvconference{2016}{BrainHack Paris: Anatomy}{about 40 participants}{}
+{Paris, France}{\href{http://neuroanatomy.github.io/events/brainhack/}{neuroanatomy.github.io/events/brainhack}}
+\cvconference{2016}{BrainHack Paris}{about 70 participants}{}
+{Paris, France}{\href{http://www.brainhack.org/}{www.brainhack.org}}
+
+%\newpage
+
+% \section{Workshops Organisation}
+% \cvconference{2018}{BrainHack Paris: Anatomy}{Workshop: Python Workshop for beginners}{}{Paris, France}{}
+% \cvconference{2017}{BrainHack London: Clinical neuroanatomy}{Workshop: BCBtoolkit: Open software for lesion data analyses}{}{London, UK}{}
+
+\section{Presentations/Posters}
+\cvconference{2018}{ISMRM}{Power Pitch: Advanced lesion symptom mapping analyses and
+implementation as BCBtoolkit}{Paris, France}{}{}
+\cvconference{2017}{6th scientific meeting of the federation of the European
+societies of neuropsychology}{Poster: Advanced lesion symptom mapping analyses and
+implementation as BCBtoolkit}{Maastricht, The Netherlands}{}{}
+\cvconference{2017}{OHBM}{Poster: Think outside the box: novel approaches to assess
+distant lesion effect in the brain}
+{Vancouver, Canada}{}{}
+\cvconference{2016}{OHBM}{Poster: Disconnectome maps: a new approach to assess long
+range disconnections induced by focal brain lesion}
+{Geneva, Switzerland}{}{}
+% arguments 3 to 6 can be left empty
+
+\section{Membership to Scientific Societies}
+\cventry{2015~–~now}{Funding member}
+{Brain Connectivity Behaviour Group (\href{http://bcblab.com}{BCBlab})}{}{}{}{}
+\cventry{2015~–~now}{Member}{Organization for Human Brain Mapping (OHBM)}
+{}{}{}{}
+\cventry{2017~–~now}{Member}{Member, International Society for Magnetic
+Resonance in Medicine (ISMRM)}{}{}{}{}
+
+\section{Journal Reviewer}
+\cvitem{}{Communications Biology}
+\cvitem{}{NeuroImage}
+
+\section{Training}
+\cvconference{2018}
+{Workshop: Marie Sklodowska-Curie Individual Fellowships training}{}{}{}{1 day}
+\cvconference{2017}
+{Workshop: Successful Grant Writing}{}{}{}{3 days}
+\cvconference{2017}
+{CAJAL Course Connectomics: from Micro- to Meso- and Macro-Scales}
+{An intensive course dedicated to connectomics, covering most of the imaging and
+analyses techniques to measure the connections from micro to macro scales}
+{}{}{3 weeks}
+\cvconference{2017}
+{OHBM educational course: Brain parcellations and functional territories}
+{}{}{}{half a day}
+\cvconference{2017}
+{OHBM educational course: Taking Connectivity to a Skeptical Future: Challenges,
+Tools and Techniques}
+{}{}{}{half a day}
+\cvconference{2016}
+{Statistics Courses for Neuroscientists by Hervé Abdi}
+{Training course on statistical techniques to analyze the structure of large
+datasets as found in Genomics, brain imaging, and sensory evaluation}
+{}{}{1 week}
+\cvconference{2016}
+{OHBM educational course: Tools to parcellate the brain and its relationship
+to function}
+{}{}{}{half a day}
+\cvconference{2016}
+{OHBM educational course: Graph Theoretic Models of Brain Networks}
+{}{}{}{half a day}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%             COMPÉTENCES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Computer Knowledges}
+ \cvitem{Neuroimaging software}{C-PAC, Nipype, ANTs, MRtrix, FSL}
+ \cvitem{Programming languages}{Python, Java, C, C++, Bash, R, LaTeX, HTML, CSS,
+ Php, javascript, Sage, Pascal, Ocaml, Lex, Yacc, MySQL}
+ \cvitem{OS}{Linux, OSX}
+
+
+\end{document}
