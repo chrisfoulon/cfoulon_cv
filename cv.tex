@@ -2,10 +2,21 @@
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.86, top=1.5cm, bottom=1.5cm]{geometry}
-\usepackage[french, english]{babel}
+\usepackage[english, french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{amssymb}
 \usepackage{eurosym}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\cfoot{\thepage{}~of~\pageref{LastPage}}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\thispagestyle{fancy}
 
 
 % copied and adapted from moderncvstyleclassic.sty
@@ -39,9 +50,10 @@
 
 
 \section{Career Summary}
-\cventry{2018~–~now}{Postdoc}{Development of novel computational analysis and experimental techniques for determining how brain function and structure are impacted by mental illness and development}{Department of Diagnostic Medicine, The University of Texas at Austin, Dell Medical School}{
+\cventry{2019~–~now}{Senior Research Fellow}{High Dimensional Neurology}{Department of Brain Repair \& Rehabilitation at the UCL Queen Square Institute of Neurology}{Supervisor: Parashkev Nachev}{}
+\cventry{2018~–~2019}{Postdoc in Computational Neuroimaging}{Development of novel computational analysis and experimental techniques for determining how brain function and structure are impacted by mental illness and development}{Department of Diagnostic Medicine, The University of Texas at Austin, Dell Medical School}{
  Supervisor: Cameron Craddock, Computational Neuroimaging Laboratory}{}
- \cventry{2015~–~2018}{PhD in Neuroscience}{Implementing advanced
+\cventry{2015~–~2018}{PhD in Neuroscience}{Implementing advanced
  Neo-Associationist analyses of the brain}{Inserm U1127, ED3C}{
  Supervisor: Michel Thiebaut de Schotten, Brain Connectivity Behaviour Lab}{}
  %{Funded by ANR/FRM}
@@ -50,7 +62,7 @@
 \cventry{2009~–~2013}{Bachelor of Science in Computer Science}{}{}{
 University of Rouen}{}
 
-\renewcommand\refname{Publications}
+\renewcommand\refname{Publications} 
 \bibliographystyle{unsrt}
 \bibliography{bibcv}
 \nocite{*}
@@ -60,10 +72,6 @@ University of Rouen}{}
 project grant}{\newline{Project: Connectivity-­based brain parcellation toolkit}}
 {2900\euro{}}{}{}
 \cventry{2016}{Naturalia \& Biologia travel grant}{}{1170\euro{}}{}{}
-%\section{Publications}
-%\cventry{}{Foulon C and Cerliani L and Kinkingnehun S and Levy R and Rosso
-%	C and Urbanski M and Volle E and Thiebaut de Schotten M}{Advanced Lesion Symptom Mapping
-%	Analyses And Implementation As BCBtoolkit}{2017}{BioRxiv}{}
 
 \section{Visiting Position}
 \cvconference{2017 - 2 months}
@@ -74,32 +82,35 @@ functional connectivity with Daniel Margulies, head of the Max Planck Research
 Group Neuroanatomy \& Connectivity}
 {}{}{}
 
+
+\newpage
+
 \section{Workshop Organisations}
 
-\cvconference{2018}{BrainHack Paris: Global Edition}{about 30 participants}
+\cvconference{2018}{Brainhack Paris: Global Edition}{about 30 participants}
 {During which I animated a workshop: Python neuroimaging beginners tutorial}
-{Paris, France}{\href{http://www.bcblab.com/BCB/Events/Entries/2018/5/2_BrainHack_in_Paris__Global_Edition.html}{www.bcblab.com}}
-\cvconference{2018}{BrainHack Paris: Anatomy}{about 20 participants}
-{During which I animated a workshop: Python Workshop for beginners}
-{Paris, France}{\href{http://bcblab.com/BCB/Events/Entries/2018/2/19_BrainHack_in_Paris__Anatomy.html}{www.bcblab.com}}
-\cvconference{2017}{BrainHack London: Clinical neuroanatomy}{about 15 participants}
+{Paris, France}{\href{http://www.bcblab.com/BCB/Events/Entries/2018/5/2_Brainhack_in_Paris__Global_Edition.html}{www.bcblab.com}}
+\cvconference{2018}{Brainhack Paris: Anatomy}{about 20 participants}
+{During which I animated a workshop: Python tutorial for beginners}
+{Paris, France}{\href{http://bcblab.com/BCB/Events/Entries/2018/2/19_Brainhack_in_Paris__Anatomy.html}{www.bcblab.com}}
+\cvconference{2017}{Brainhack London: Clinical neuroanatomy}{about 15 participants}
 {During which I animated a workshop: BCBtoolkit: Open software for lesion data analyses}
 {London, UK}
 {\href{https://www.brainhacklondon.eu/}{www.brainhacklondon.eu}}
-\cvconference{2017}{BrainHack Paris: Brain lesions}{about 40 participants}
+\cvconference{2017}{Brainhack Paris: Brain lesions}{about 40 participants}
 {}{Paris, France}{\href{http://neuroanatomy.github.io/events/brainhack-lesions/}{neuroanatomy.github.io/events/brainhack-lesions}}
-\cvconference{2017}{BrainHack Paris: Global Edition}{about 40 participants}{}
+\cvconference{2017}{Brainhack Paris: Global Edition}{about 40 participants}{}
 {Paris, France}{\href{http://www.brainhack.org/global2017/}{www.brainhack.org/global2017}}
-\cvconference{2016}{BrainHack Paris: Anatomy}{about 40 participants}{}
+\cvconference{2016}{Brainhack Paris: Anatomy}{about 40 participants}{}
 {Paris, France}{\href{http://neuroanatomy.github.io/events/brainhack/}{neuroanatomy.github.io/events/brainhack}}
-\cvconference{2016}{BrainHack Paris}{about 70 participants}{}
+\cvconference{2016}{Brainhack Paris}{about 70 participants}{}
 {Paris, France}{\href{http://www.brainhack.org/}{www.brainhack.org}}
 
-%\newpage
+
 
 % \section{Workshops Organisation}
-% \cvconference{2018}{BrainHack Paris: Anatomy}{Workshop: Python Workshop for beginners}{}{Paris, France}{}
-% \cvconference{2017}{BrainHack London: Clinical neuroanatomy}{Workshop: BCBtoolkit: Open software for lesion data analyses}{}{London, UK}{}
+% \cvconference{2018}{Brainhack Paris: Anatomy}{Workshop: Python Workshop for beginners}{}{Paris, France}{}
+% \cvconference{2017}{Brainhack London: Clinical neuroanatomy}{Workshop: BCBtoolkit: Open software for lesion data analyses}{}{London, UK}{}
 
 \section{Presentations/Posters}
 \cvconference{2018}{ISMRM}{Power Pitch: Advanced lesion symptom mapping analyses and
@@ -126,8 +137,22 @@ Resonance in Medicine (ISMRM)}{}{}{}{}
 \section{Journal Reviewer}
 \cvitem{}{Communications Biology}
 \cvitem{}{NeuroImage}
+\cvitem{}{Brain Structure and Function}
+\cvitem{}{Human Brain Mapping}
+\cvitem{}{Journal of Neurology, Neurosurgery & Psychiatry}
+\cvitem{}{NeuroImage: Clinical}
+\cvitem{}{Cortex}
+\cvitem{}{Brain}
+\cvitem{}{European Journal of Neurology}
+\cvitem{}{Stroke and Vascular Neurology}
+
+\newpage
 
 \section{Training}
+\cvconference{2019}{Nature Research Academies Author Workshop}{Training course in academic writing and publishing}{}{}{2 days}
+\cvconference{2019}
+{Neurohackademy}{Summer school + Hackathon on neuroscience data analyses for shareable and reproducible science}{\href{https://neurohackademy.org/}{neurohackademy.org}}{}{2 weeks}
+\cvconference{2019}{Brainhack}{Hackathon evaluate and improve non-human preprocessing pipelines for fMRI and sMRI data}{}{}{3 days}
 \cvconference{2018}
 {Workshop: Marie Sklodowska-Curie Individual Fellowships training}{}{}{}{1 day}
 \cvconference{2017}
@@ -159,15 +184,16 @@ to function}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%             COMPÉTENCES
+%             Skills
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{Computer Knowledges}
- \cvitem{Neuroimaging software}{C-PAC, Nipype, ANTs, MRtrix, FSL}
+\section{Technical Skills}
+ \cvitem{Neuroimaging software}{C-PAC, Nipype, Scikit-Learn, Nilearn, ANTs, Dipy, MRtrix, FSL, AFNI}
+ \cvitem{Tools}{Git, Docker, Singularity}
  \cvitem{Programming languages}{Python, Java, C, C++, Bash, R, LaTeX, HTML, CSS,
  Php, javascript, Sage, Pascal, Ocaml, Lex, Yacc, MySQL}
  \cvitem{OS}{Linux, OSX}
-
+ \cvitem{My Github page}{\href{https://github.com/chrisfoulon}{github.com/chrisfoulon}}
 
 \end{document}
